@@ -1,7 +1,7 @@
 import streamlit as st
 from transfomers import pipeline
 
-@as.cache_resource
+@st.cache_resource
 def load_summarizer():
   return pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 summarizer = load_summarizer()
