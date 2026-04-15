@@ -1,5 +1,5 @@
 import streamlit as st
-from transfomersimport pipeline
+from transfomers import pipeline
 
 @as.cache_resource
 def load_summarizer():
